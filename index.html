@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rock Paper Scissors</title>
+    <!-- Add the link to your CSS file -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body onload="newGame()">
+    <div class="container">
+      <div class="top_info">
+        <h1>Rock Paper Scissors</h1>
+        <p>You: <span id="score_a"></span></p>
+        <p>Computer: <span id="score_b"></span></p>
+
+        <button onclick="newGame()">New Game</button>
+      </div>
+
+      <div class="game_container">
+        <div id="pedra" class="" onclick="pickOption(1)">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-rock-o-512.png" />
+          <span>Rock</span>
+        </div>
+        <div id="papel" class="" onclick="pickOption(2)">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-stop-o-512.png" />
+          <span>Paper</span>
+        </div>
+        <div id="tesoura" class="" onclick="pickOption(3)">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-scissors-o-512.png" />
+          <span>Scissors</span>
+        </div>
+      </div>
+      <script src="./index.js"></script>
+    </div>
+  </body>
+</html>
